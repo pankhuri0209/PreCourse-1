@@ -1,5 +1,4 @@
-class Exercise_2 {
-    public static class StackAsLinkedList {
+class StackAsLinkedList {
 
         StackNode root;
 
@@ -58,18 +57,20 @@ class Exercise_2 {
             return data;
         }
     }
-        //Driver code
-        public static void main(String[] args) {
+class Exercise_2 {
 
-            StackAsLinkedList sll = new StackAsLinkedList();
+    //Driver code
+    public static void main(String[] args) {
 
-            sll.push(10);
-            sll.push(20);
-            sll.push(30);
-          //  sll.pop();
-            System.out.println(sll.pop() + " popped from stack");
+        StackAsLinkedList sll = new StackAsLinkedList();
 
-            System.out.println("Top element is " + sll.peek());
-        }
+        sll.push(10);
+        sll.push(20);
+        sll.push(30);
+        //  sll.pop();
+        System.out.println(sll.pop() + " popped from stack");
+
+        System.out.println("Top element is " + sll.peek());
+    }
 
 }
